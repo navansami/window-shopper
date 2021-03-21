@@ -1,0 +1,22 @@
+{
+  "name": "window-shopper",
+  "version": "1.0.0",
+  "description": "shopping application",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navansami/window-shopper.git"
+  },
+  "author": "Navan Sami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/navansami/window-shopper/issues"
+  },
+  "homepage": "https://github.com/navansami/window-shopper#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
