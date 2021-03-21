@@ -1,10 +1,20 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import HomeScreen from './screens/HomeScreen';
 
 function App() {
   return (
-    <div className="App">
-      <h1> Welcome to Window Shopper</h1>
-    </div>
+    <React.Fragment>
+      <Header />
+      <main>
+        <Container>
+          <HomeScreen />
+        </Container>
+      </main>
+      <Footer />
+    </React.Fragment>
   );
 }
 
