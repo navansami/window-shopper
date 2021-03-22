@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import colors from 'colors';
 import morgan from 'morgan';
 import connectDB from './config/db.js';
+import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 import productRouter from './routes/productroutes.js';
 
 dotenv.config();
@@ -13,7 +14,10 @@ const app = express();
 // App CORS here before deploy
 app.use(morgan('dev'));
 
+// Routes
 app.use('/api/products', productRouter);
+app.use(notFound)
+app.use(errorHandler)
 
 const PORT = process.env.PORT || 5000;
 
